@@ -20,10 +20,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/listagem_categorias', CategoriaController::class . '@index')->name('listagem_categorias');
+Route::get('/cadastro_categorias', CategoriaController::class . '@formCadastro');
+Route::post('/cadastrar_categoria', CategoriaController::class . '@cadastrar');
+Route::get('/edicao_categorias/{id}', CategoriaController::class . '@formEdicao');
+Route::post('/editar_categoria/{id}', CategoriaController::class . '@editar');
+Route::get('/apagar_categoria/{id}', CategoriaController::class . '@apagar');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/listagem_categorias', CategoriaController::class . '@index');
-Route::get('/cadastro_categorias', CategoriaController::class . '@formCadastro');
