@@ -27,6 +27,20 @@ Route::get('/edicao_categorias/{id}', CategoriaController::class . '@formEdicao'
 Route::post('/editar_categoria/{id}', CategoriaController::class . '@editar');
 Route::get('/apagar_categoria/{id}', CategoriaController::class . '@apagar');
 
+Route::get('/listagem_produtos', ProdutoController::class . '@index')->name('listagem_produtos');
+Route::get('/cadastro_produtos', ProdutoController::class . '@formCadastro');
+Route::post('/cadastrar_produto', ProdutoController::class . '@cadastrar');
+Route::get('/edicao_produtos/{id}', ProdutoController::class . '@formEdicao');
+Route::post('/editar_produto/{id}', ProdutoController::class . '@editar');
+Route::get('/apagar_produtos/{id}', ProdutoController::class . '@apagar');
+
+Route::get('/listagem_clientes', ClienteController::class . '@index')->name('listagem_clientes');
+Route::get('/cadastro_clientes', ClienteController::class . '@formCadastro');
+Route::post('/cadastrar_cliente', ClienteController::class . '@cadastrar');
+Route::get('/edicao_clientes/{id}', ClienteController::class . '@formEdicao');
+Route::post('/editar_cliente/{id}', ClienteController::class . '@editar');
+Route::get('/apagar_clientes/{id}', ClienteController::class . '@apagar');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

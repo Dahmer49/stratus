@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <a href="/listagem_categorias">Categorias</a>
+                    <a href="/listagem_produtos">Produtos</a>
+                    <a href="/listagem_clientes">Clientes</a>
                 </div>
             </div>
         </div>

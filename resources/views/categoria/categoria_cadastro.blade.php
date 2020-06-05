@@ -6,4 +6,5 @@
     <label for="descricao">Descrição:</label>
     <input type="text" id="descricao" name="descricao">
     <button type="submit">Salvar</button>
+    <a href="/listagem_categorias">Voltar</a>
 </form>
