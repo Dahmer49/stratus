@@ -12,8 +12,10 @@ class CalcularValorPedido
     	return $produtos->sum(function (Produto $produto) {
     		if ($produto->valor > 0)
     		{
-    			return $produto->valor;
+    			return ($produto->valor * $produto->quantidade);
     		}
+
+    		return 0;
     	});
 	}
 }

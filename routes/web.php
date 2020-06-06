@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
@@ -40,6 +40,11 @@ Route::post('/cadastrar_cliente', ClienteController::class . '@cadastrar');
 Route::get('/edicao_clientes/{id}', ClienteController::class . '@formEdicao');
 Route::post('/editar_cliente/{id}', ClienteController::class . '@editar');
 Route::get('/apagar_clientes/{id}', ClienteController::class . '@apagar');
+
+Route::get('/listagem_vendas', VendaController::class . '@index')->name('listagem_vendas');
+Route::get('/cadastro_vendas', VendaController::class . '@formCadastro');
+Route::post('/cadastrar_venda', VendaController::class . '@cadastrar');
+Route::get('/visualizar_venda/{id}', VendaController::class . '@visualizar');
 
 Auth::routes();
 

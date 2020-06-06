@@ -17,7 +17,7 @@ class CriarTabelaVendas extends Migration
             $table->increments('id');
             $table->integer('cliente_id');
             $table->float('valor_total');
-            $table->float('desconto');
+            $table->float('valor_com_desconto');
 
             $table->foreign('cliente_id')->references('id')->on('clientes');
         });

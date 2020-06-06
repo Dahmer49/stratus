@@ -14,9 +14,14 @@
                         </div>
                     @endif
 
-                    <a href="/listagem_categorias">Categorias</a>
-                    <a href="/listagem_produtos">Produtos</a>
-                    <a href="/listagem_clientes">Clientes</a>
+                    <div class="col-md-12">
+                        <a style="width: 49.5%" type="button" class="btn btn-primary p-4 mb-3" href="/listagem_categorias">Categorias</a>
+                        <a style="width: 49.5%" type="button" class="btn btn-success p-4 mb-3" href="/listagem_produtos">Produtos</a>
+                    </div>
+                    <div class="col-md-12">
+                        <a style="width: 49.5%" type="button" class="btn btn-warning p-4 mb-3" href="/listagem_clientes">Clientes</a>
+                        <a style="width: 49.5%" type="button" class="btn btn-info p-4 mb-3" href="/listagem_vendas">Vendas</a>
+                    </div>
                 </div>
             </div>
         </div>

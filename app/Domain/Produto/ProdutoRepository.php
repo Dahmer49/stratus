@@ -14,6 +14,11 @@ class ProdutoRepository
         return Produto::with($relations)->find($id);
 	}
 
+    public function findAll(array $ids)
+    {
+        return Produto::find($ids);
+    }
+
 	public function apagar(int $id)
 	{
 		return Produto::destroy($id);

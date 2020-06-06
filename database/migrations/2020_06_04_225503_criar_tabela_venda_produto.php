@@ -18,6 +18,7 @@ class CriarTabelaVendaProduto extends Migration
             $table->integer('venda_id');
             $table->integer('produto_id');
             $table->float('valor');
+            $table->integer('quantidade');
 
             $table->foreign('venda_id')->references('id')->on('vendas');
             $table->foreign('produto_id')->references('id')->on('produtos');

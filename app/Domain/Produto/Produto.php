@@ -23,6 +23,8 @@ class Produto extends Model
 
     public $timestamps = false;
 
+    public $quantidade;
+
     protected $fillable = [
         'nome',
         'categoria_id',
