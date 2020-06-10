@@ -5,7 +5,7 @@
     <div class="offset-md-10 col-md-2 mb-4">
         <a type="button" class="btn btn-primary" href="/cadastro_produtos">
             <i class="fas fa-plus"></i>
-            Cadastrar Produto
+            Salvar Produto
         </a>
     </div>
 
